@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission - SVD Siddhartha Law College</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .container_mission {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(28, 46, 74, 0.8), rgba(28, 46, 74, 0.8)), url('Images/gavel.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            text-align: center;
+            padding: 6rem 0 ;
+            position: relative;
+            overflow: hidden;
+            max-height: 250px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem !important;
+        }
+        
+        .hero p {
+            font-size: 1.2rem !important;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content-section {
+            padding: 5rem 0;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--primary-color);
+        }
+
+        .mission-content {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+            color: #333;
+        }
+
+        .mission-content p {
+            margin-bottom: 2rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero {
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <?php include('includes/header.php'); ?>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Our Mission</h1>
+                <p>Promoting excellence in legal education and creating socially responsible legal professionals.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container_mission">
+                <h2>Mission Statement</h2>
+                <div class="mission-content">
+                    <p>To promote excellence in legal education by honing skills and activating inner potential and talent of our students in an enabling academic environment, and further sustain passion in them to become socially responsible legal professionals acting as catalysts in promoting rule of law and civility in public life.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <?php include('includes/footer.php'); ?>
+</body>
+</html>
